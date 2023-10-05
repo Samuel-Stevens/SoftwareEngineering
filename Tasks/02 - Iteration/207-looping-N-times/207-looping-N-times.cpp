@@ -14,13 +14,17 @@ int main()
     }
 
     // TASK A - count from 10 down to 0 in steps of -1
-
+    for (int a = 10; a > 0; a--)
+        printf("a=%d\n", a);
     // TASK B - count from 10 down to -10 in steps of -2
-
+    for (int b = 10; b >= -10; b -= 2)
+        printf("b=%d\n", b);
     // TASK C - count from 10 to 200 in steps of 10
-
+    for (int c = 10; c <= 200; c += 10)
+        printf("c = % d\n", c);
     // TASK D - count from -10 down to 20 in steps of 5
-
+    for (int d = -10; d <= 20; d += 5)
+        printf("d=%d", d);
     // TASK E - can you predict the largest value of i that is displayed?
     for (i = 0; i < 12; i += 3)
     {

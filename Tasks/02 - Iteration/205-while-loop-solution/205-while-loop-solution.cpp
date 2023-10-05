@@ -6,10 +6,10 @@ int main()
 
     puts("Start while loop");
 
-    while (i >= 0)
+    while (i <= 0)
     {
         printf("i = %d\n", i);
-        i -= 2;        // Subtract 2;
+        i += 1;        // Subtract 2;
     }
 
     printf("Exiting with i=%d\n", i);
