@@ -32,19 +32,24 @@ int main()
     } while ((level < 0) || (level > 100)); //Repeat until a valid number is entered
 
     // Mutuallly Exclusive Decision Pathway
-    if (level == 0) 
+    if (0 <= level <= 5) 
     {
         cout << "Tank is empty. It needs filling." << endl;
     } 
-    else if (level <= low)                       // check the level
+    else if (5 <= level <= 30)                       // check the level
     {
         cout << "Tank is low and needs filling." << endl;
     }
-    else if (level < high) 
+    else if (30 <= level <= 70)
+    {
+        cout << "Your tank has an ok amounts of fuel" << endl:
+    }
+    else if (70 <= level <= 95) 
     {
         cout << "Tank has sufficient fuel" << endl;
     }
-    else {
+    else if (95 <= level <= 100)
+    {
         cout << "Tank is full" << endl;
     }
 }

@@ -44,7 +44,14 @@ int main()
 
     //Write task 1 solution here
     int64_t sum = 0L;   //Result needs to be bigger than int to avoid overflow
-
+    while (int track = 0, track <= 10, track + 1)
+    {
+        double ate = 0;
+        int cal = nums[cal] + 1;
+            int cula;
+            cula + cal = ate;
+        
+    }
 
     // ***********************************************************************************************************************
     // TASK 2 - calculate the mean of all elements (this will be a fractional value) and display to 1 decimal place accuracy *
