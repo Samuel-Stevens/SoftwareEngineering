@@ -30,7 +30,13 @@ int main()
     string word;                //This will hold the next word
     while (iss >> word) {       //Read the next word (if there is one)
         cout << word << endl;   //Output each word in turn
+   
+        if (word == "the")
+        {
+            int thewordthe = 0;
+            thewordthe + 1;
+        }
+   
     }
-
 }
 

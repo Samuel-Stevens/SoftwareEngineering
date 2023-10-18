@@ -44,21 +44,23 @@ int main()
 
     //Write task 1 solution here
     int64_t sum = 0L;   //Result needs to be bigger than int to avoid overflow
-    while (int track = 0, track <= 10, track + 1)
+    int numbs[] = { 0, 11, 22, 33, 44, 55, 66, 77, 88, 99, 111 };
+    for(int n = 0; n < N; n++ )
     {
-        double ate = 0;
-        int cal = nums[cal] + 1;
-            int cula;
-            cula + cal = ate;
-        
-    }
+        sum = sum + numbs[n];
 
+        
+        
+    } 
+       cout << "The overall value of the array is " << sum << endl;
     // ***********************************************************************************************************************
     // TASK 2 - calculate the mean of all elements (this will be a fractional value) and display to 1 decimal place accuracy *
     // ***********************************************************************************************************************
 
     //Write task 2 solution here
-
+       float mean = 0;
+       mean = sum / N;
+       cout << "The mean of the array is " << mean << ".0" << endl;
 }
 
 
