@@ -3,6 +3,16 @@ using namespace std;
 
 int L;		//This is not an ideal location - we will soon address this
 
+
+void bannerhere()
+{
+	for (int n = 0; n < (L + 4); n++)
+	{
+		cout << "*";
+
+	}
+}
+
 int main()
 {
 	const string message = "Welcome to Computer Science";
@@ -16,9 +26,11 @@ int main()
 	}
 	cout << endl;
 
-	cout << "* ";				//Leading *
-	cout << message;			//Message
-	cout << " *" << endl;		//Trailing *
+	bannerhere();//Leading *
+	cout << endl;
+	cout << message;
+	cout << endl;
+	bannerhere();	//Trailing *
 
 	//Write the banner below
 	for (unsigned int n = 0; n < (L + 4); n++) {
