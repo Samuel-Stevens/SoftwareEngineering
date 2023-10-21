@@ -1,5 +1,8 @@
 #include <iostream>
+
 using namespace std;
+
+int L = 0;
 
 void displayBanner(int stringLen)
 {
@@ -9,22 +12,34 @@ void displayBanner(int stringLen)
 	cout << endl;
 }
 
+void displaywithinBanner(string message)
+{
+	L = message.length();
+
+	displayBanner(L);
+	
+	cout << "* ";				//Leading *
+	cout << message;			//Message
+	cout << " *" << endl;		//Trailing *
+
+	displayBanner(L);
+}
+
+
 int main()
 {
 	const string message = "Welcome to Computer Science";
 
 	//Get the length of the string
-	int L = message.length();			//L is now a LOCAL variable
+				//L is now a LOCAL variable
 
 	//Write the banner above
-	displayBanner(L);
+	//displayBanner(L);
 
-	cout << "* ";				//Leading *
-	cout << message;			//Message
-	cout << " *" << endl;		//Trailing *
+	displaywithinBanner(message);
 
 	//Write the banner below
-	displayBanner(L);
+	//displayBanner(L);
 
 	//Tell the calling shell all is well
 	return 0;
