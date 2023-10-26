@@ -37,10 +37,13 @@ int main()
     string subjectArea;
     inputStream >> subjectArea;
 
-    //Display the result
-    cout << "Subject Area is " << subjectArea << endl;
 
-    int code;
+    int code = 1001;
+    
+    //Display the result
+    cout << "Subject Area is " << subjectArea << code << endl;
+
+    
 
     //TO DO: 
     // Now find the module ID number
