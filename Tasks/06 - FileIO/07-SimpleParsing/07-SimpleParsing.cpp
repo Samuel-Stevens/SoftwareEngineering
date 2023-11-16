@@ -38,10 +38,11 @@ int main()
     inputStream >> subjectArea;
 
 
-    int code = 1001;
+    string ModuleCode;
+    inputStream >> ModuleCode;
     
     //Display the result
-    cout << "Subject Area is " << subjectArea << code << endl;
+    cout << "Subject Area is " << subjectArea << ModuleCode << endl;
 
     
 
